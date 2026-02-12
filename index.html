@@ -6,88 +6,102 @@
 <title>Salmo do Dia</title>
 
 <style>
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    background: transparent !important;
+    color: inherit;
     font-family: Georgia, serif;
-    background-color: #f8f7f4;
-    color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
     max-width: 680px;
-    padding: 40px;
-    text-align: left;
+    padding: 24px;
 }
 
-.mode {
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.5;
-    margin-bottom: 25px;
-}
+/* Título */
 
 .reference {
-    font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+.label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.number {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+/* Texto */
+
 .text {
-    line-height: 1.7;
+    line-height: 1.8;
     font-size: 18px;
+    white-space: pre-wrap;
 }
 
 .divider {
     margin-top: 40px;
-    font-size: 12px;
     opacity: 0.4;
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
-    <div class="mode" id="mode"></div>
-    <div class="reference" id="reference"></div>
+
+    <div class="reference">
+        <div class="label">SALMO</div>
+        <div class="number" id="reference"></div>
+    </div>
+
     <div class="text" id="text"></div>
+
     <div class="divider">—</div>
+
 </div>
 
 <script>
-const startDate = new Date("2026-02-11");
 
-async function loadPsalms() {
+async function loadPsalm() {
+
     const response = await fetch("salmos.json");
-    const psalms = await response.json();
+    const data = await response.json();
 
-    function getDayIndex(total) {
-        const today = new Date();
-        const diffTime = today - startDate;
-        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-        return diffDays % total;
-    }
+    const startDate = new Date(data.config.inicio_ciclo);
+    const today = new Date();
+
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
     function getMode() {
-        const hour = new Date().getHours();
+        const hour = today.getHours();
         return hour < 18 ? "manha" : "noite";
     }
 
     const mode = getMode();
-    const todayIndex = getDayIndex(psalms[mode].length);
-    const todayPsalm = psalms[mode][todayIndex];
+    const psalmList = data[mode];
 
-    document.getElementById("mode").innerText =
-        mode === "manha" ? "SALMO DA MANHÃ" : "SALMO DA NOITE";
+    const index = diffDays % psalmList.length;
+    const todayPsalm = psalmList[index];
 
-    document.getElementById("reference").innerText = todayPsalm.referencia;
+    // Mostrar número do salmo
+    document.getElementById("reference").innerText =
+        todayPsalm.referencia.replace("Salmo ", "");
+
+    // Mostrar texto integral
     document.getElementById("text").innerText = todayPsalm.texto;
 }
 
-loadPsalms();
+loadPsalm();
+
 </script>
 
 </body>
