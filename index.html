@@ -9,14 +9,16 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: transparent !important;
-    color: inherit;
     font-family: Georgia, serif;
+    background-color: #1f1f1f;
+    color: #e6e6e6;
 }
 
 .container {
     max-width: 680px;
-    padding: 24px;
+    padding: 32px;
+    background-color: #242424;
+    border-radius: 12px;
 }
 
 /* Título */
@@ -82,9 +84,17 @@ async function loadPsalm() {
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
     function getMode() {
-        const hour = today.getHours();
-        return hour < 18 ? "manha" : "noite";
+    const params = new URLSearchParams(window.location.search);
+    const modoUrl = params.get("modo");
+
+    if (modoUrl === "manha" || modoUrl === "noite") {
+        return modoUrl;
     }
+
+    // fallback automático por horário
+    const hour = new Date().getHours();
+    return hour < 18 ? "manha" : "noite";
+}
 
     const mode = getMode();
     const psalmList = data[mode];
