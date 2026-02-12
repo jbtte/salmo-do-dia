@@ -85,13 +85,12 @@ async function loadPsalm() {
 
     function getMode() {
     const params = new URLSearchParams(window.location.search);
-    const modoUrl = params.get("modo");
+    const periodoUrl = params.get("periodo");
 
-    if (modoUrl === "manha" || modoUrl === "noite") {
-        return modoUrl;
+    if (periodoUrl === "manha" || periodoUrl === "noite") {
+        return periodoUrl;
     }
 
-    // fallback automático por horário
     const hour = new Date().getHours();
     return hour < 18 ? "manha" : "noite";
 }
