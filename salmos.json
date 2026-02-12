@@ -1,0 +1,64 @@
+{
+  "config": {
+    "inicio_ciclo": "2026-02-11"
+  },
+  "manha": [
+    {
+      "id": 1,
+      "referencia": "Salmo 150",
+      "texto": "1 Aleluia! Louvai a Deus no seu santuário, louvai-o no firmamento do seu poder.<br />2 Louvai-o por suas grandes obras, louvai-o pela sua imensa grandeza.<br />3 Louvai-o tocando trombetas, louvai-o com harpa e cítara;<br />4 louvai-o com tímpanos e danças, louvai-o nas cordas e nas flautas.<br />5 Louvai-o com címbalos sonoros, louvai-o com címbalos retumbantes; todo ser vivo louve o Senhor. Aleluia!"
+    },
+    {
+      "id": 2,
+      "referencia": "Salmo 22",
+      "texto": "1 [Salmo de Davi.] O Senhor é o meu pastor, nada me falta.<br />2 Ele me faz descansar em verdes prados, a águas tranqüilas me conduz.<br />3 Restaura minhas forças, guia-me pelo caminho certo, por amor do seu nome.<br />4 Se eu tiver de andar por vale escuro, não temerei mal nenhum, pois comigo estás. O teu bastão e teu cajado me dão segurança.<br />5 Diante de mim preparas uma mesa aos olhos de meus inimigos; unges com óleo minha cabeça, meu cálice transborda.<br />6 Felicidade e graça vão me acompanhar todos os dias da minha vida e vou morar na casa do Senhor por muitíssimos anos."
+    },
+    {
+      "id": 3,
+      "referencia": "Salmo 99",
+      "texto": "1 [Salmo. Para a ação de graças.] Aclamai ao Senhor, terra inteira,<br />2 servi ao Senhor com alegria, ide a ele gritando de alegria.<br />3 Ficai sabendo que o Senhor é Deus; ele nos fez e nós somos seus, seu povo e rebanho do seu pasto.<br />4 Entrai por suas portas com hinos de graças, pelos seus átrios com cantos de louvor, louvai-o, bendizei seu nome;<br />5 pois o Senhor é bom, eterno é seu amor e sua fidelidade se estende a todas as gerações."
+    },
+    {
+      "id": 4,
+      "referencia": "Salmo 15",
+      "texto": "1 [Salmo de Davi.] Senhor, quem pode habitar na tua tenda? E morar no teu santo monte?<br />2 Aquele que vive sem culpa, age com justiça e fala a verdade no seu coração;<br />3 que não diz calúnia com sua língua, não causa dano ao próximo e não lança insulto ao vizinho.<br />4 A seus olhos é desprezível o malvado, mas honra quem respeita o Senhor. Mesmo se jura com prejuízo para si, não muda;<br />5 se empresta dinheiro é sem usura, e não aceita presentes para condenar o inocente. Quem agir deste modo ficará firme para sempre."
+    },
+    {
+      "id": 5,
+      "referencia": "Salmo 18,8-15",
+      "texto": "8 A lei do Senhor é perfeita, conforto para a alma; o testemunho do Senhor é verdadeiro, torna sábios os pequenos.<br />9 As ordens do Senhor são justas, alegram o coração; os mandamentos do Senhor são retos, iluminam os olhos.<br />10 O temor do Senhor é puro, dura para sempre; os juízos do Senhor são fiéis e justos,<br />11 mais preciosos que o ouro, que muito ouro fino, mais doces que o mel e que o licor de um favo.<br />12 Também teu servo neles se instrui, para quem os observa é grande o proveito,<br />13 As inadvertências quem as descobre? Perdoa-me as culpas que não vejo.<br />14 Também do orgulho salva teu servo para que não me domine; então serei irrepreensível, e imune do grande pecado.<br />15 Digna-te aceitar as palavras de minha boca, cheguem à tua presença os pensamentos do meu coração. Senhor, meu rochedo e meu libertador."
+    }
+  ],
+  "noite": [
+    {
+      "id": 1,
+      "referencia": "Salmo 4",
+      "texto": "1 [Ao mestre do coro. Com instrumentos de corda. Salmo de Davi.]<br />2 Quando te invoco, responde-me, ó meu Deus justiceiro; na angústia liberta-me; tem piedade de mim e ouve minha oração.<br />3 Ó raça humana, até quando ofendereis minha glória, amareis a vaidade, buscareis a mentira?<br />4 Sabei que o Senhor fez maravilhas em favor de seu amigo; o Senhor escuta quando lhe dirijo meu apelo.<br />5 Tremei e não pequeis; refleti no silêncio do vosso leito.<br />6 Oferecei sacrifícios legítimos e tende confiança no Senhor.<br />7 Muitos dizem: “Quem nos fará provar o bem?” Levanta sobre nós, Senhor, a luz da tua face.<br />8 Deste mais alegria ao meu coração do que àqueles que têm muito trigo e vinho.<br />9 Em paz, logo que me deito, adormeço, pois só tu, Senhor, me fazes descansar com segurança."
+    },
+    {
+      "id": 2,
+      "referencia": "Salmo 118,57-60",
+      "texto": "57 Eu disse: Minha porção, Senhor, é guardar tuas palavras.<br />58 De todo coração te supliquei: piedade de mim segundo tua promessa.<br />59 Examinei meus caminhos, voltei meus passos para teus testemunhos.<br />60 Eu me apresso, sem demora, a guardar teus mandamentos."
+    },
+    {
+      "id": 3,
+      "referencia": "Salmo 3",
+      "texto": "1 [Salmo de Davi, quando fugia de seu filho Absalão.]<br />2 Ó Senhor, como são numerosos meus adversários! São muitos os que se erguem contra mim;<br />3 muitos dizem a meu respeito: “Deus não lhe dará a salvação!”<br />4 Mas tu, ó Senhor, és minha defesa, és a minha glória, tu que ergues a minha cabeça.<br />5 Quando com minha voz eu invoquei o Senhor, ele me respondeu do seu santo monte.<br />6 Eis que me deito e durmo, e me acordo, pois o Senhor me sustenta.<br />7 Não tenho medo da multidão de gente que se lança contra mim de todo lado.<br />8 Levanta-te, Senhor, salva-me, ó Deus. Fere na face a todos os meus inimigos; quebra os dentes dos ímpios.<br />9 Do Senhor é a salvação. Sobre o seu povo desça a sua bênção."
+    },
+    {
+      "id": 4,
+      "referencia": "Salmo 15,7-11",
+      "texto": "7 Bendigo o Senhor que me aconselhou; mesmo de noite meu coração me instrui.<br />8 Sempre coloco à minha frente o Senhor, ele está à minha direita, não vacilo.<br />9 Disso se alegra meu coração, exulta a minha alma; também meu corpo repousa seguro,<br />10 pois não vais abandonar minha vida no sepulcro, nem vais deixar que teu santo experimente a corrupção,<br />11 O caminho da vida me indicarás, alegria plena à tua direita, para sempre."
+    },
+    {
+      "id": 5,
+      "referencia": "Salmo 90",
+      "texto": "1 Tu que estás sob a proteção do Altíssimo e moras à sombra do Onipotente,<br />2 dize ao Senhor: “Meu refúgio, minha fortaleza, meu Deus, em quem confio”.<br />3 Ele te livrará do laço do caçador, da peste funesta;<br />4 ele te cobrirá com suas penas, sob suas asas encontrarás refúgio. Sua fidelidade te servirá de escudo e couraça.<br />5 Não temerás os terrores da noite nem a flecha que voa de dia,<br />6 nem a peste que vagueia nas trevas, nem a praga que devasta ao meio dia.<br />7 Cairão mil ao teu lado e dez mil à tua direita; mas nada te poderá atingir.<br />8 Basta que olhes com teus olhos, verás o castigo dos ímpios."
+    },
+    {
+      "id": 6,
+      "referencia": "Salmo 133",
+      "texto": "1 [Cântico das romarias.] Vinde, bendizei o Senhor, vós todos, servos do Senhor; vós que estais de serviço na casa do Senhor durante as noites.<br />2 Levantai as mãos para o santuário e bendizei o Senhor.<br />3 De Sião te abençoe o Senhor, que fez o céu e a terra."
+    }
+  ]
+}

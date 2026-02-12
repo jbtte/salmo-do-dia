@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salmo do Dia</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f8f7f4;
+    color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 680px;
+    padding: 40px;
+    text-align: left;
+}
+
+.mode {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 25px;
+}
+
+.reference {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.divider {
+    margin-top: 40px;
+    font-size: 12px;
+    opacity: 0.4;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="mode" id="mode"></div>
+    <div class="reference" id="reference"></div>
+    <div class="text" id="text"></div>
+    <div class="divider">—</div>
+</div>
+
+<script>
+const startDate = new Date("2026-02-11");
+
+async function loadPsalms() {
+    const response = await fetch("salmos.json");
+    const psalms = await response.json();
+
+    function getDayIndex(total) {
+        const today = new Date();
+        const diffTime = today - startDate;
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        return diffDays % total;
+    }
+
+    function getMode() {
+        const hour = new Date().getHours();
+        return hour < 18 ? "manha" : "noite";
+    }
+
+    const mode = getMode();
+    const todayIndex = getDayIndex(psalms[mode].length);
+    const todayPsalm = psalms[mode][todayIndex];
+
+    document.getElementById("mode").innerText =
+        mode === "manha" ? "SALMO DA MANHÃ" : "SALMO DA NOITE";
+
+    document.getElementById("reference").innerText = todayPsalm.referencia;
+    document.getElementById("text").innerText = todayPsalm.texto;
+}
+
+loadPsalms();
+</script>
+
+</body>
+</html>
