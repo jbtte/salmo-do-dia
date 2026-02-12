@@ -97,7 +97,7 @@ async function loadPsalm() {
         todayPsalm.referencia.replace("Salmo ", "");
 
     // Mostrar texto integral
-    document.getElementById("text").innerText = todayPsalm.texto;
+    document.getElementById("text").innerHTML = todayPsalm.texto;
 }
 
 loadPsalm();
